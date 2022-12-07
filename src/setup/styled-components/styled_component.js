@@ -7,6 +7,7 @@ export const StyledFooter = styled.footer`
         text-align: center;
 	display: grid;
 	align-content: center;
+	padding:40px;
 	/* align-items: center; */
         /* if is it mobile change the height */
         ${({ isBrowser }) =>
