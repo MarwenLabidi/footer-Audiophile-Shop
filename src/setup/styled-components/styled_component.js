@@ -40,6 +40,8 @@ export const StyledFooter = styled.footer`
                                 padding: 20px 0;
                                 & li {
                                         padding: 5px;
+                                        border: 3px dotted transparent;
+                                        outline:none;
                                 }
                                 letter-spacing: 0.125em;
                                 & li:hover,
@@ -47,6 +49,7 @@ export const StyledFooter = styled.footer`
                                         cursor: pointer;
                                         color: var(--color-secondary);
                                         transition: all 0.3s ease-in-out;
+                                        border: 3px dotted red;
                                 }
 				${({ isBrowser }) =>
                 isBrowser &&

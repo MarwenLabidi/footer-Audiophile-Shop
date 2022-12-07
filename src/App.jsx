@@ -55,7 +55,7 @@ function App() {
                                                 </p>
                                         </article>
                                         <section className='logoSection'>
-                                                <svg
+                                                <svg tabIndex={0}
                                                         width='24'
                                                         height='24'
                                                         xmlns='http://www.w3.org/2000/svg'>
@@ -65,7 +65,7 @@ function App() {
                                                         />
                                                 </svg>
                                         
-                                                <svg
+                                                <svg tabIndex={0}
                                                         width='24'
                                                         height='24'
                                                         xmlns='http://www.w3.org/2000/svg'>
@@ -74,7 +74,7 @@ function App() {
                                                                 fillRule='nonzero'
                                                         />
                                                 </svg>
-                                                <svg
+                                                <svg tabIndex={0}
                                                         width='24'
                                                         height='24'
                                                         xmlns='http://www.w3.org/2000/svg'>
