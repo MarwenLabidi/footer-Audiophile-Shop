@@ -27,6 +27,9 @@ export const StyledFooter = styled.footer`
                         & .logo {
                                 margin: auto;
                                 width: 180px;
+				&:hover{
+					cursor: pointer;
+				}
                         }
                 }
                 & nav {
