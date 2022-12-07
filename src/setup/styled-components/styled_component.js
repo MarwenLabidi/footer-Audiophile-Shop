@@ -5,16 +5,16 @@ export const StyledFooter = styled.footer`
         background-color: var(--color-primary);
         color: var(--color-white);
         text-align: center;
-	display: grid;
-	align-content: center;
-	padding:40px;
-	/* align-items: center; */
+        display: grid;
+        align-content: center;
+        padding: 40px;
+        /* align-items: center; */
         /* if is it mobile change the height */
         ${({ isBrowser }) =>
                 isBrowser &&
                 css`
                         height: 50vh;
-			align-content: space-between;
+                        align-content: space-between;
                 `}
         & .firstSection {
                 & .orangeBarLogoSection {
@@ -28,9 +28,9 @@ export const StyledFooter = styled.footer`
                         & .logo {
                                 margin: auto;
                                 width: 180px;
-				&:hover{
-					cursor: pointer;
-				}
+                                &:hover {
+                                        cursor: pointer;
+                                }
                         }
                 }
                 & nav {
@@ -41,7 +41,7 @@ export const StyledFooter = styled.footer`
                                 & li {
                                         padding: 5px;
                                         border: 3px dotted transparent;
-                                        outline:none;
+                                        outline: none;
                                 }
                                 letter-spacing: 0.125em;
                                 & li:hover,
@@ -51,21 +51,21 @@ export const StyledFooter = styled.footer`
                                         transition: all 0.3s ease-in-out;
                                         border: 3px dotted red;
                                 }
-				${({ isBrowser }) =>
-                isBrowser &&
-                css`
-			display: flex;
-			gap: 10px;
-                `}
+                                ${({ isBrowser }) =>
+                                        isBrowser &&
+                                        css`
+                                                display: flex;
+                                                gap: 10px;
+                                        `}
                         }
                 }
-		${({ isBrowser }) =>
-                isBrowser &&
-                css`
-			display: flex;
-			justify-content: space-between;
-                        margin:0 90px;
-                `}
+                ${({ isBrowser }) =>
+                        isBrowser &&
+                        css`
+                                display: flex;
+                                justify-content: space-between;
+                                margin: 0 90px;
+                        `}
         }
         & .secondeSection {
                 & article {
@@ -75,14 +75,14 @@ export const StyledFooter = styled.footer`
                         }
                         & .copyRight {
                                 font-size: 1.2rem;
-				margin: 20px 0;
+                                margin: 20px 0;
                         }
-			${({ isBrowser }) =>
-                isBrowser &&
-                css`
-			/* background-color:red; */
-			width:50%;
-                `}
+                        ${({ isBrowser }) =>
+                                isBrowser &&
+                                css`
+                                        /* background-color:red; */
+                                        width: 50%;
+                                `}
                 }
                 & .logoSection {
                         & svg {
@@ -96,25 +96,24 @@ export const StyledFooter = styled.footer`
                                 transition: all 0.3s ease-in-out;
                         }
                         ${({ isBrowser }) =>
-                isBrowser &&
-                css`
-			/* background-color:red; */
-			width:50%;
-                        /* background-color: red; */
-                        margin:auto;
-                        display: flex;
-                        object-fit: cover;
-                        justify-content: flex-end;
-                `}
+                                isBrowser &&
+                                css`
+                                        /* background-color:red; */
+                                        width: 50%;
+                                        /* background-color: red; */
+                                        margin: auto;
+                                        display: flex;
+                                        object-fit: cover;
+                                        justify-content: flex-end;
+                                `}
                 }
-		${({ isBrowser }) =>
-                isBrowser &&
-                css`
-			display: flex;
-			justify-content: space-around;
-			text-align: left;
-                        margin: 0px 90px;
-
-                `}
+                ${({ isBrowser }) =>
+                        isBrowser &&
+                        css`
+                                display: flex;
+                                justify-content: space-around;
+                                text-align: left;
+                                margin: 0px 90px;
+                        `}
         }
 `;
