@@ -1,5 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
+:root {
+    --color-primary:#191919;
+    --color-secondary:#d87d4a;
+    --color-gray-300:#cfcfcf;
+    --color-gray-400:#b1b1b1;
+    --color-white:#fff;
+    
+}
 body{ 
     font-size:18px;
     /* background-color: red; */
