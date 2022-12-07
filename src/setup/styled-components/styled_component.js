@@ -60,7 +60,8 @@ export const StyledFooter = styled.footer`
                 isBrowser &&
                 css`
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
+                        margin:0 90px;
                 `}
         }
         & .secondeSection {
@@ -77,7 +78,7 @@ export const StyledFooter = styled.footer`
                 isBrowser &&
                 css`
 			/* background-color:red; */
-			width:40%;
+			width:50%;
                 `}
                 }
                 & .logoSection {
@@ -91,6 +92,17 @@ export const StyledFooter = styled.footer`
                                 fill: var(--color-secondary);
                                 transition: all 0.3s ease-in-out;
                         }
+                        ${({ isBrowser }) =>
+                isBrowser &&
+                css`
+			/* background-color:red; */
+			width:50%;
+                        /* background-color: red; */
+                        margin:auto;
+                        display: flex;
+                        object-fit: cover;
+                        justify-content: flex-end;
+                `}
                 }
 		${({ isBrowser }) =>
                 isBrowser &&
@@ -98,6 +110,8 @@ export const StyledFooter = styled.footer`
 			display: flex;
 			justify-content: space-around;
 			text-align: left;
+                        margin: 0px 90px;
+
                 `}
         }
 `;
